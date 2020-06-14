@@ -1,26 +1,56 @@
-body {
-    overflow: hidden;
+* {
     margin: 0;
     padding: 0;
+}
+body {
     color: black;
     font-family: 'Josefin Sans', sans-serif;
-}
-.box {
-    height: 100vh;
-    width: 100vw;
-    overflow: scroll;
-    overflow-x: hidden;
+    background-color: #F5F3F3;
 }
 .part {
     min-height: 100vh;
     opacity: 0;
     transition: all 0.5s ease-out;
     background-size: cover;
-    border: 0.5em black solid;
+}
+#phone {
+    width: 50vw;
+    height: 50vh;
+}
+#banner .grid {
+    height: 90vh;
+    width: 100%;
+}
+.full {
+    width: 100%;
+    height: 100%;
+}
+.segment {
+    height: 85vh;
+    width: 100%;
 }
 .fade-in {
     opacity: 1;
 }
-.centered {
+.center {
     text-align: center;
+}
+.centered {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    flex-direction: column;
+}
+footer {
+    height: 20vh;
+    background-color: #346C76;
 }

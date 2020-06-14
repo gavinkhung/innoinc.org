@@ -10,3 +10,11 @@ $('.box').ready(function(){
         .addTo(controller);
     });
 });
+
+// tabbed
+$('#newsletter .menu .item')
+  .tab()
+;
+$('#about .menu .item')
+  .tab()
+;
