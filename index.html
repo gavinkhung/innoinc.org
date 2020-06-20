@@ -6,385 +6,100 @@
     <title>INNO</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="public/assets/imgs/logo.png">
+    <link rel="stylesheet" href="public/assets/css/styles.css">
     <link rel="stylesheet" href="public/assets/css/index.css">
 </head>
 <body>
-    <div class="ui container">
-        <!-- banner -->
-        <section id="banner" class="part">
-            <!-- navbar -->
-            <nav id="navbar" class="ui menu top six item stackable">
-                <div class="item">
-                    <img src="public/assets/imgs/logo.png" alt="">
-                </div>
-                <a href="" class="item">lorem</a>
-                <a href="" class="item">lorem</a>
-                <a href="" class="item">lorem</a>
-                <a href="" class="item">lorem</a>
-            </nav>
-            <div class="ui grid">
-                <div class="row">
-                    <div class="ten wide column centered">
-                        <h1>INNO</h1>
-                        <span style="font-size: 50px;" class="font-italic font-weight-bold " id="typed"></span>
+    <div id="landing" >
+        <div class="ui container">
+            <!-- banner -->
+            <section id="banner" class="part section">
+                <!-- navbar -->
+                <nav id="navbar" class="ui menu top stackable">
+                    <div class="item">
+                        <a href="index.html">
+                            <img class="image" src="public/assets/imgs/logo.png" alt="">
+                        </a>
                     </div>
-                    <div class="six wide column centered">
-                        <img id="phone" class="svg" src="public/assets/imgs/vectors/iphone.svg" alt="">
+                    <div class="right menu">
+                        <div class="ui simple dropdown item">
+                            About <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a href="about/team.html" class="item">Our Team</a>
+                                <a href="about/chapters.html" class="item">Chapters</a>
+                                <a href="about/contact.html" class="item">Contact Us</a>
+                            </div>
+                        </div>
+                        <a href="calendar.html" class="item">Calendar</a>
+                        <div class="ui simple dropdown item">
+                            Resources <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a href="resources/newsletter.html" class="disabled item">Newsletter</a>
+                                <a href="resources/curriculum.html" class="item">Curriculum</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-    </div>
-
-    <div class="ui container">
-        <section id="about" class="part">
-            <h2 class="center">About</h2>
-            <div class="ui top attached tabular menu">
-                <a class="item active" data-tab="one">one</a>
-                <a class="item" data-tab="two">two</a>
-                <a class="item" data-tab="three">three</a>
-              </div>
-              <div class="ui bottom attached tab segment active" data-tab="one">
-                  <div class="ui fluid placeholder">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                  </div>
-              </div>
-              <div class="ui bottom attached tab segment" data-tab="two">
-                <div class="ui fluid placeholder">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                  </div>
-              </div>
-              <div class="ui bottom attached tab segment" data-tab="three">
-                  <div class="ui fluid placeholder">
-                      <div class="line"></div>
-                      <div class="line"></div>
-                      <div class="line"></div>
-                      <div class="line"></div>
-                      <div class="line"></div>
-                      <div class="line"></div>
-                      <div class="line"></div>
-                      <div class="line"></div>
-                 </div>
-              </div>
-        </section>
-        <hr>
-    </div>
-
-    <div class="ui container">
-        <section id="team" class="part">
-            <h2 class="center">Team</h2>
-
-            <div class="ui centered link cards">
-                <div class="ui card">
-                    <div class="image">
-                        <img class="ui medium rounded image" src="public/assets/imgs/team/no_profile.svg">
-                    </div>
-                    <div class="content">
-                        <a class="header">Riya Ranjan</a>
-                        <div class="description">
-                            Co-Founder and CEO
+                </nav>
+                <div class="ui grid">
+                    <div class="row">
+                        <div id="title" class="ten wide column">
+                            <h1 class="ui huge header">INNO</h1>
+                            <p>A student run non profit organization that provides competitive opportunities to introduce students to biotech concepts and the innovation behind them.</p>
+                            <!-- <h2 class="font-italic font-weight-bold " id="typed"></h2> -->
+                        </div>
+                        <div class="six wide column mobile hidden">
+                            <img class="image" src="public/assets/imgs/phone.png" alt="">
                         </div>
                     </div>
                 </div>
-
-                <div class="ui card">
-                    <div class="image">
-                        <img class="ui medium rounded image" src="public/assets/imgs/team/no_profile.svg">
-                    </div>
-                    <div class="content">
-                        <a class="header">Kavya Patel</a>
-                        <div class="description">
-                            Co-Founder and COO
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="ui card">
-                    <div class="image">
-                        <img class="ui medium rounded image" src="public/assets/imgs/team/no_profile.svg">
-                    </div>
-                    <div class="content">
-                        <a class="header">Claire Wen</a>
-                        <div class="description">
-                            VP of Resources
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ui centered link cards">
-                <div class="ui card">
-                    <div class="image">
-                        <img class="ui medium rounded image" src="public/assets/imgs/team/no_profile.svg">
-                    </div>
-                    <div class="content">
-                        <a class="header">Anjali </a>
-                        <div class="description">
-                            VP of Operations
-                        </div>
-                    </div>
-                </div>
-                <div class="ui card">
-                    <div class="image">
-                        <img class="ui medium rounded image" src="public/assets/imgs/team/no_profile.svg">
-                    </div>
-                    <div class="content">
-                        <a class="header">Anushka De</a>
-                        <div class="description">
-                            VP of Marketing
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-    </div>
-
-    <div class="ui container">
-        <section id="chapters" class="part">
-            <h2 class="center">Chapters</h2>
-            <div class="ui stackable two column grid">
-                <div class="column">
-                    <div class="ui fluid placeholder">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui fluid placeholder">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui fluid placeholder">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui fluid placeholder">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui fluid placeholder">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui fluid placeholder">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-    </div>
-
-    <div class="ui container">
-        <section id="calendar">
-            <h2 class="center">Calendar</h2>
-            <div class="full">
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%237257b3&amp;ctz=America%2FLos_Angeles&amp;src=cTRqaTkyMDhydXJjZ3JhNGFiYTk5aXZ2anNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E4C441" class="segment" style="border:solid 1px #777" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </section>
-        <hr>
-    </div>
-
-    <div class="ui container">
-        <section id="competitions" class="part">
-            <h2 class="center">Competitions</h2>
-            <div class="ui fluid placeholder">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <div class="ui fluid placeholder">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </section>
-        <hr>
-    </div>
-
-    <div class="ui container">
-        <section id="newsletter" class="part">
-            <h2 class="center">Newsletter</h2>
-
-            <div class="ui top attached tabular menu">
-                <a class="item active" data-tab="first">First</a>
-                <a class="item" data-tab="second">Second</a>
-                <a class="item" data-tab="third">Third</a>
-              </div>
-              <div class="ui bottom attached tab segment active" data-tab="first">
-                  <div class="ui fluid placeholder">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                  </div>
-              </div>
-              <div class="ui bottom attached tab segment" data-tab="second">
-                <div class="ui fluid placeholder">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                  </div>
-              </div>
-              <div class="ui bottom attached tab segment" data-tab="third">
-                <div class="ui fluid placeholder">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                  </div>
-              </div>
-        </section>
-        <hr>
-    </div>
-
-    <div class="ui container">
-        <section id="curriculum" class="part">
-            <h2 class="center">Curriculum</h2>
-            <div class="ui cards full centered">
-                <div class="card">
-                  <div class="content">
-                    <div class="header">Elliot Fu</div>
-                    <div class="meta">Friend</div>
-                    <div class="description">
-                      Elliot Fu is a film-maker from New York.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="content">
-                    <div class="header">Veronika Ossi</div>
-                    <div class="meta">Friend</div>
-                    <div class="description">
-                      Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="content">
-                    <div class="header">Jenny Hess</div>
-                    <div class="meta">Friend</div>
-                    <div class="description">
-                      Jenny is a student studying Media Management at the New School
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-        </section>
-        <hr>
-    </div>
-
-    <div class="ui container">
-        <section id="join" class="part">
-            <h2 class="center">Join us</h2>
-            <p>Insert form</p>
-        </section>
-        <hr>
-    </div>
-
-    <div class="ui container">
-        <section id="contact" class="part">
-            <h2 class="center">Contact Us</h2>
-            <div class="ui vertical stripe">
-                <div class="ui container">
-                    <form action="https://formspree.io/mdowepzq" method="POST" class="centered">
-                        <label class="field">
-                            Your Name:
-                            <input type="text" name="name" placeholder="name" required>
-                        </label>
-                        <label class="field">
-                            Your Email:
-                            <input type="email" name="_replyto" placeholder="email" required>
-                        </label>
-                        <label class="field">
-                            Message:
-                            <textarea class="message" name="message" placeholder="message" required></textarea>
-                        </label>
-                        
-                        <button value="Send">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div class="center">
-            
+            </section>
         </div>
-    </footer>
+    </div>
+    
+    <div id="number">
+        <div class="ui container">
+            <section id="chapters" class="section">
+                <h2 class="ui huge header center">By the Numbers</h2>
+                <div class="ui stackable two column grid">
+                    <div class="column">
+                        <div class="ui fluid placeholder">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui fluid placeholder">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+        </div>
+    </div>
 
-    <p>purple #7257B3</p>
-    <p>blue #C5F1F1</p>
-    <p>pink #F8D6FC</p>
-    <p>green? #346C76</p>
-    <p>grey #F5F3F3</p>
+
+    <div id="join" >
+        <div class="ui container">
+            <section class="section centered-v">
+                <h2 class="ui huge header center">Register Your Chapter Today</h2>
+                <a class="ui green button center quarter">Learn more</a>
+            </section>
+        </div>
+    </div>
+
+    <p style="background-color: #7257B3;">purple #7257B3</p>
+    <p style="background-color: #C5F1F1;">blue #C5F1F1</p>
+    <p style="background-color: #F8D6FC;">pink #F8D6FC</p>
+    <p style="background-color: #346C76;">green? #346C76</p>
+    <p style="background-color: #F5F3F3;">grey #F5F3F3</p>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
@@ -394,7 +109,7 @@
 
     <script>
         var typed = new Typed('#typed', {
-          strings: ["lorem", "ipsum dolor sit, amet consectetur", " atque quis nulla! Consectetur nam ", "maiores quod ad veniam voluptatem"],
+          strings: [" lorem", " ipsum dolor sit, amet consectetur", " atque quis nulla! Consectetur nam ", " maiores quod ad veniam voluptatem"],
           backSpeed: 80,
           typeSpeed: 40,
           backDelay: 2000,

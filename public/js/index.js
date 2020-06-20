@@ -1,7 +1,7 @@
 // scroll magic
-$('.box').ready(function(){
+$(document).ready(function(){
     let controller = new ScrollMagic.Controller();
-    $('.part').each(function(){
+    $('.section').each(function(){
         new ScrollMagic.Scene({
             triggerElement: this
         })
@@ -11,10 +11,14 @@ $('.box').ready(function(){
     });
 });
 
+
 // tabbed
 $('#newsletter .menu .item')
   .tab()
 ;
 $('#about .menu .item')
+  .tab()
+;
+$('#calendar .menu .item')
   .tab()
 ;

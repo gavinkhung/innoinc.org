@@ -1,16 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #F5F3F3;
-}
-.part {
-    min-height: 100vh;
-    opacity: 0;
-    transition: all 0.5s ease-out;
+#landing {
+    background-image: url("../imgs/backgrounds/team.svg");
     background-size: cover;
 }
 #phone {
@@ -21,36 +10,6 @@ body {
     height: 90vh;
     width: 100%;
 }
-.full {
-    width: 100%;
-    height: 100%;
-}
-.segment {
-    height: 85vh;
-    width: 100%;
-}
-.fade-in {
-    opacity: 1;
-}
-.center {
-    text-align: center;
-}
-.centered {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    justify-content: center;
-}
-form {
-    flex-direction: column;
-}
-footer {
-    height: 20vh;
-    background-color: #346C76;
+#title .ui.header {
+    font-size: 5.05em;
 }

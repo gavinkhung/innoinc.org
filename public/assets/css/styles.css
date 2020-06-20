@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.05em;
+}
+body {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #F5F3F3;
+}
+.section {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    background-size: cover;
+}
+.part {
+    min-height: 100vh;
+}
+img {
+    background-size: cover;
+}
+.full {
+    width: 100%;
+    height: 100%;
+}
+.quarter {
+    width: 25%;
+}
+.segment {
+    height: 85vh;
+    width: 100%;
+}
+.fade-in {
+    opacity: 1;
+}
+.center {
+    text-align: center;
+}
+.centered-v, #title, #join {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.centered-h {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+hr {
+    margin: 1em;
+}
+form {
+    flex-direction: column;
+}
+#join {
+    height: 60vh;
+    background-image: url("../imgs/backgrounds/pbw.svg");
+}
+
+@media only screen and (max-width: 767px) {
+    [class*="mobile hidden"],
+    [class*="tablet only"]:not(.mobile),
+    [class*="computer only"]:not(.mobile),
+    [class*="large monitor only"]:not(.mobile),
+    [class*="widescreen monitor only"]:not(.mobile),
+    [class*="or lower hidden"]{
+        display: none !important;
+    }
+}
