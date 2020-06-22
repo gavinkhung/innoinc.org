@@ -13,3 +13,15 @@
 #title .ui.header {
     font-size: 5.05em;
 }
+#why {
+    margin: 5%;
+}
+#learning {
+    background-color: #C5F1F1;
+}
+#resources {
+    background-color: #6BB1BE;
+}
+#experience {
+    background-color: #F8D6FC;
+}

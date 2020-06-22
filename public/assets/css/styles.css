@@ -61,6 +61,9 @@ img {
     flex-direction: row;
     align-items: center;
 }
+button, .button {
+    box-shadow: 0 15px 40px rgba(197, 241, 241, 0.9)
+}
 hr {
     margin: 1em;
 }
