@@ -17,4 +17,9 @@ $(document).ready(function(){
     $("#school6").click(function(){
         $('#school6_modal.ui.modal').modal('show');
     });
+
+    $("#register").click(function(e){
+        e.preventDefault();
+        $('#chapter_image.ui.modal').modal('show');
+    });
 });
