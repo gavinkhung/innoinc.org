@@ -71,11 +71,17 @@ form {
     flex-direction: column;
 }
 #join {
-    height: 60vh;
+    height: 70vh;
     background-image: url("../imgs/backgrounds/pbw.svg");
 }
 textarea {
     resize: none;
+}
+.underline {
+    text-decoration: underline;
+}
+footer a {
+    color: black;
 }
 @media only screen and (max-width: 767px) {
     [class*="mobile hidden"],
