@@ -43,7 +43,7 @@ img {
 .center {
     text-align: center;
 }
-.centered-v, #title, #join {
+.centered-v, #title, #join, #experience_text {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
