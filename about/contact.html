@@ -44,10 +44,10 @@
     </div>
     
     <div class="ui container">
-        <section id="contact" class="part section centered-v">
-            <h2 class="ui huge header center">Contact Us</h2>
+        <h2 class="ui huge header center">Contact Us</h2>
+        <section id="contact" class="part section">
             <div class="ui vertical stripe">
-                <form action="https://formspree.io/mdowepzq" method="POST" class="centered-v">
+                <form action="https://formspree.io/mdowepzq" class="ui form" method="POST">
                     <label class="field">
                         Your Name:
                         <input type="text" name="name" placeholder="name" required>
@@ -58,9 +58,9 @@
                     </label>
                     <label class="field">
                         Message:
-                        <textarea class="message" name="message" placeholder="message" required></textarea>
+                        <textarea class="message" name="message" placeholder="message" required style="resize: none;"></textarea>
                     </label>
-                    <button value="Send">Submit</button>
+                    <button class="ui button" value="Send">Submit</button>
                 </form>
             </div>
         </section>

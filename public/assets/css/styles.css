@@ -4,6 +4,9 @@
     font-family: 'Work Sans', sans-serif;
     font-size: 1.05em;
 }
+h2 {
+    font-size: 0.5em;
+}
 body {
     color: black;
     font-family: 'Josefin Sans', sans-serif;
@@ -68,7 +71,9 @@ form {
     height: 60vh;
     background-image: url("../imgs/backgrounds/pbw.svg");
 }
-
+textarea {
+    resize: none;
+}
 @media only screen and (max-width: 767px) {
     [class*="mobile hidden"],
     [class*="tablet only"]:not(.mobile),
