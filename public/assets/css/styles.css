@@ -43,7 +43,7 @@ img {
 .center {
     text-align: center;
 }
-.centered-v, #title, #join, #experience_text, #resources_text, #learning_text, #join_text {
+.centered-v, #title, #phone, #join, #experience_text, #resources_text, #learning_text, #join_text {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;

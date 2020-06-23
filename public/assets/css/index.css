@@ -8,19 +8,14 @@
     color: #7257B3;
 }
 #landing {
-    background-image: url("../imgs/backgrounds/team.svg");
-    background-size: cover;
-}
-#phone {
-    width: 50vw;
-    height: 50vh;
+    
 }
 #banner .grid {
     height: 90vh;
     width: 100%;
 }
 #title .ui.header {
-    font-size: 5.05em;
+    font-size: 6.05em;
 }
 #commited {
     margin: 5%;
