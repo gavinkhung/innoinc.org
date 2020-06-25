@@ -1,23 +1,4 @@
 $(document).ready(function(){
-    $("#school1").click(function(){
-        $('#school1_modal.ui.modal').modal('show');
-    });
-    $("#school2").click(function(){
-        $('#school2_modal.ui.modal').modal('show');
-    });
-    $("#school3").click(function(){
-        $('#school3_modal.ui.modal').modal('show');
-    });
-    $("#school4").click(function(){
-        $('#school4_modal.ui.modal').modal('show');
-    });
-    $("#school5").click(function(){
-        $('#school5_modal.ui.modal').modal('show');
-    });
-    $("#school6").click(function(){
-        $('#school6_modal.ui.modal').modal('show');
-    });
-
     $("#register").click(function(e){
         e.preventDefault();
         $('#chapter_image.ui.modal').modal('show');
