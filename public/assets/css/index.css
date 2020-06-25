@@ -7,9 +7,6 @@
     font-family: AdreenaScript;
     color: #7257B3;
 }
-#landing {
-    
-}
 #banner .grid {
     height: 90vh;
     width: 100%;
@@ -24,11 +21,11 @@
     margin: 5%;
 }
 #learning {
-    background-color: #C5F1F1;
+    border: #C5F1F1 10px solid;
 }
 #resources {
-    background-color: #6BB1BE;
+    border: #6BB1BE 10px solid;
 }
 #experience {
-    background-color: #F8D6FC;
+    border: #F8D6FC 10px solid;
 }

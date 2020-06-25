@@ -1,4 +1,14 @@
+a.ui.header {
+    font-family: 'GlacialIndifferenceRegular';
+}
 #chapter_image img {
     width: 100%;
     height: 100%;
+}
+.box {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+#chapters {
+    background-image: url("../imgs/backgrounds/test-1.svg");
 }

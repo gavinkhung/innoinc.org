@@ -4,12 +4,17 @@
     font-family: 'GlacialIndifferenceRegular';
     font-size: 1.05em;
 }
+p.ui.header, div.header, div.ui.header, a.header, h1.ui.header, h2.ui.header, h3.ui.header, h4.ui.header, h5.ui.header, h6.ui.header, a.ui.header, a.ui.button {
+    font-family: 'GlacialIndifferenceRegular';
+}
+div.card div.content a.header {
+    font-family: 'GlacialIndifferenceRegular';
+}
 h2 {
     font-size: 0.5em;
 }
 body {
     color: black;
-    font-family: 'Josefin Sans', sans-serif;
     background-color: #F5F3F3;
 }
 #navbar {
