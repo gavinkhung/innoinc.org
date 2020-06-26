@@ -1,4 +1,8 @@
-#team {
-    background-image: url("../imgs/backgrounds/team.svg");
-    background-size: cover;
+.image {
+    object-fit: cover;
+}
+
+.image img {
+    width: 30vw;
+    height: 30vw;
 }
