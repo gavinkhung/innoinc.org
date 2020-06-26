@@ -7,9 +7,6 @@
     font-family: AdreenaScript;
     color: #7257B3;
 }
-#phoneImg {
-    
-}
 #banner .grid {
     height: 90vh;
     width: 100%;
@@ -25,10 +22,13 @@
 }
 #learning {
     border: #C5F1F1 10px solid;
+    background-color: #C5F1F1;
 }
 #resources {
     border: #6BB1BE 10px solid;
+    background-color: #6BB1BE;
 }
 #experience {
     border: #F8D6FC 10px solid;
+    background-color: #F8D6FC;
 }
