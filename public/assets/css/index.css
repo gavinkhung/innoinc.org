@@ -10,6 +10,9 @@
     font-family: AdreenaScript;
     color: #7257B3;
 }
+#phoneImg {
+    height: 85vh;
+}
 #banner .grid {
     height: 90vh;
     width: 100%;
