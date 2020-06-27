@@ -4,6 +4,9 @@
     font-family: 'GlacialIndifferenceRegular';
     font-size: 1.05em;
 }
+.mobile.only {
+    display: none;
+}
 p.ui.header, div.header, div.ui.header, a.header, h1.ui.header, h2.ui.header, h3.ui.header, h4.ui.header, h5.ui.header, h6.ui.header, a.ui.header, a.ui.button {
     font-family: 'GlacialIndifferenceRegular';
 }
@@ -98,3 +101,9 @@ footer a {
         display: none !important;
     }
 }
+@media only screen and (max-width: 768px) {
+    .mobile.only {
+        display: block;
+    }
+}
+  
