@@ -60,7 +60,7 @@ img {
     flex-direction: column;
     justify-content: center;
 }
-.centered-h {
+.centered-h, #phone {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
