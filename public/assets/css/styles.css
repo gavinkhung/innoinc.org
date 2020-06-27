@@ -75,7 +75,7 @@ hr {
 form {
     flex-direction: column;
 }
-#join {
+#join, #footer {
     height: 70vh;
     background-image: url("../imgs/backgrounds/pbw.svg");
 }
