@@ -3,6 +3,9 @@
     src: url('../fonts/AdreenaScript.ttf');
     src: url('../fonts/AdreenaScript.otf');
 }
+#landing {
+    /* background-image: url("../imgs/backgrounds/websiteBackground.png"); */
+}
 #inno {
     font-family: AdreenaScript;
     color: #7257B3;
