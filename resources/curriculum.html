@@ -11,60 +11,76 @@
     <link rel="stylesheet" href="../public/assets/css/styles.css">
 </head>
 <body>
-
-  <div class="ui container">
-        <!-- banner -->
-        <section id="banner" class="section">
-            <!-- navbar -->
-            <nav id="navbar" class="ui secondary menu stackable mobile only">
-                <div class="item">
-                    <a href="../index.html">
-                        <img class="image" src="../public/assets/imgs/logo.png" alt="">
-                    </a>
-                </div>
-                <div class="right stackable menu">
-                    <a href="../about/team.html" class="item">Our Team</a>
-                    <a href="../about/chapters.html" class="item">Chapters</a>
-                    <a href="../calendar.html" class="item">Calendar</a>
-                    <a href="../resources/newsletter.html" class="disabled item">Newsletter</a>
-                    <a href="../resources/curriculum.html" class="disabled item">Curriculum</a>
-                    <a href="../contact.html" class="item">Contact Us</a>
-                </div>
-            </nav>
-            <nav id="navbar" class="ui secondary menu stackable computer only">
-                <div class="item">
-                    <a href="../index.html">
-                        <img class="image" src="../public/assets/imgs/logo.png" alt="">
-                    </a>
-                </div>
-                <div class="right stackable menu">
-                    <div class="ui simple dropdown item">
-                        About <i class="dropdown icon"></i>
-                        <div class="stackable menu">
-                            <a href="../about/team.html" class="item">Our Team</a>
-                            <a href="../about/chapters.html" class="item">Chapters</a>
-                        </div>
+    <nav id="mobile-navbar" class="mobile only">
+        <div id="hamburger" class="ui grid">
+            <div class="left floated left aligned eight wide column">
+                <a href="../index.html">
+                    <img class="image" src="../public/assets/imgs/logo.png" alt="">
+                </a>
+            </div>
+            <div class="right floated right aligned eight wide column">
+                <i id="hamburger-icon" class="bars icon"></i>
+            </div>
+        </div>
+        <div id="hamburger-menu" class="ui two column grid">
+            <div class="left floated left aligned column">
+                <a href="../about/team.html" class="item">Our Team</a>
+            </div>
+            <div class="left floated left aligned column">
+                <a href="../about/chapters.html" class="item">Chapters</a>
+            </div>
+            <div class="left floated left aligned column">
+                <a href="../calendar.html" class="item">Calendar</a>
+            </div>
+            <div class="left floated left aligned column">
+                <a href="../resources/newsletter.html" class="disabled item">Newsletter</a>
+            </div>
+            <div class="left floated left aligned column">
+                <a href="../resources/curriculum.html" class="disabled item">Curriculum</a>
+            </div>
+            <div class="left floated left aligned column">
+                <a href="../contact.html" class="item">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <div class="ui container">
+            <!-- banner -->
+            <section id="banner" class="section">
+                <!-- navbar -->
+                <nav id="navbar" class="ui secondary menu stackable computer only">
+                    <div class="item">
+                        <a href="../index.html">
+                            <img class="image" src="../public/assets/imgs/logo.png" alt="">
+                        </a>
                     </div>
-                    <a href="../calendar.html" class="item">Calendar</a>
-                    <div class="ui simple dropdown item">
-                        Resources <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <a href="../resources/newsletter.html" class="disabled item">Newsletter</a>
-                            <a href="../resources/curriculum.html" class="disabled item">Curriculum</a>
+                    <div class="right stackable menu">
+                        <div class="ui simple dropdown item">
+                            About <i class="dropdown icon"></i>
+                            <div class="stackable menu">
+                                <a href="../about/team.html" class="item">Our Team</a>
+                                <a href="../about/chapters.html" class="item">Chapters</a>
+                            </div>
                         </div>
+                        <a href="../calendar.html" class="item">Calendar</a>
+                        <div class="ui simple dropdown item">
+                            Resources <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a href="../resources/newsletter.html" class="disabled item">Newsletter</a>
+                                <a href="../resources/curriculum.html" class="disabled item">Curriculum</a>
+                            </div>
+                        </div>
+                        <a href="../contact.html" class="item">Contact Us</a>
                     </div>
-                    <a href="../contact.html" class="item">Contact Us</a>
-                </div>
-            </nav>
-        </section>
-    </div>
+                </nav>
+            </section>
+        </div>
 
-    <div id="curriculum">
-      <div class="ui container">
-        <section class="part section">
-            <h2 class="ui huge header center">Curriculum</h2>
-          </section>
-      </div>
+        <div id="curriculum">
+        <div class="ui container">
+            <section class="part section">
+                <h2 class="ui huge header center">Curriculum</h2>
+            </section>
+        </div>
     </div>
 
     <footer>

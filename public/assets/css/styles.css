@@ -7,6 +7,16 @@
 .mobile.only {
     display: none;
 }
+#mobile-navbar #hamburger .column {
+    padding: 10%;
+}
+#mobile-navbar #hamburger-menu .column {
+    padding-left: 10%;
+}
+
+#hamburger-menu {
+    display: none;
+}
 p.ui.header, div.header, div.ui.header, a.header, h1.ui.header, h2.ui.header, h3.ui.header, h4.ui.header, h5.ui.header, h6.ui.header, a.ui.header, a.ui.button {
     font-family: 'GlacialIndifferenceRegular';
 }
