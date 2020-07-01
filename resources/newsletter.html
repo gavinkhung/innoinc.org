@@ -6,9 +6,9 @@
     <title>Newsletter</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
     <link rel="icon" href="../public/assets/imgs/logo.png">
     <link rel="stylesheet" href="../public/assets/css/styles.css">
+    <link rel="stylesheet" href="../public/assets/css/newsletter.css">
 </head>
 <body>
     <nav id="mobile-navbar" class="mobile only">
@@ -33,7 +33,7 @@
                 <a href="../calendar.html" class="item">Calendar</a>
             </div>
             <div class="left floated left aligned column">
-                <a href="../resources/newsletter.html" class="disabled item">Newsletter</a>
+                <a href="../resources/newsletter.html" class="item">Newsletter</a>
             </div>
             <div class="left floated left aligned column">
                 <a href="../resources/curriculum.html" class="disabled item">Curriculum</a>
@@ -65,7 +65,7 @@
                     <div class="ui simple dropdown item">
                         Resources <i class="dropdown icon"></i>
                         <div class="menu">
-                            <a href="../resources/newsletter.html" class="disabled item">Newsletter</a>
+                            <a href="../resources/newsletter.html" class="item">Newsletter</a>
                             <a href="../resources/curriculum.html" class="disabled item">Curriculum</a>
                         </div>
                     </div>
@@ -77,28 +77,42 @@
     
     <div class="ui container">
         <section id="newsletter" class="part section">
-        <h2 class="ui huge header center">Newsletter</h2>
-        <div class="ui top attached tabular menu">
-            <a class="item active" data-tab="first">First</a>
-            <a class="item" data-tab="second">Second</a>
-            <a class="item" data-tab="third">Third</a>
-            </div>
-            <div class="ui bottom attached tab segment active" data-tab="first">
-                <div class="ui fluid placeholder">
-                <div class="line"></div>
+            <h2 class="ui huge header center">Newsletter</h2>
+            <div class="ui three column grid">
+                <div class="column">
+                    <div id="june" class="ui fluid card">
+                        <div class="image">
+                            <img src="../public/assets/imgs/newsletter/june/juneCover.png">
+                        </div>
+                        <div class="content">
+                            <a class="header">June</a>
+                        </div>
+                        <div id="june_image" class="ui modal">
+                            <img src="../public/assets/imgs/newsletter/june/june.png" alt="">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="ui bottom attached tab segment" data-tab="second">
-            <div class="ui fluid placeholder">
-                <div class="line"></div>
+                <!-- <div class="column">
+                    <div class="ui fluid card">
+                        <div class="image">
+                            <img src="">
+                        </div>
+                        <div class="content">
+                            <a class="header">...</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="column">
+                    <div class="ui fluid card">
+                        <div class="image">
+                            <img src="">
+                        </div>
+                        <div class="content">
+                            <a class="header">...</a>
+                        </div>
+                    </div>
+                </div> -->
             </div>
-            <div class="ui bottom attached tab segment" data-tab="third">
-            <div class="ui fluid placeholder">
-                <div class="line"></div>
-                </div>
-            </div>
-        </div>
         </section>
     </div>
     <footer>
@@ -141,5 +155,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="../public/js/index.js"></script>
+    <script src="../public/js/newsletter.js"></script>
 </body>
 </html>

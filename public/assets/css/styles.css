@@ -1,3 +1,7 @@
+@font-face {
+    font-family: GlacialIndifferenceRegular;
+    src: url('../fonts/GlacialIndifference-Regular.otf');
+}
 * {
     margin: 0;
     padding: 0;
