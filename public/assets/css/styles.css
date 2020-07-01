@@ -89,7 +89,7 @@ form {
     flex-direction: column;
 }
 #join, #footer {
-    height: 70vh;
+    height: 100vh;
     background-image: url("../imgs/backgrounds/pbw.svg");
 }
 textarea {
@@ -116,4 +116,6 @@ footer a {
         display: block;
     }
 }
-  
+#watch {
+    padding: 20%;
+}
