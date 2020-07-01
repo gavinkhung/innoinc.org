@@ -123,3 +123,8 @@ footer a {
 #watch {
     padding: 20%;
 }
+.box {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 2.5vh;
+}
