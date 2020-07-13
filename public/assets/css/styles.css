@@ -17,7 +17,12 @@
 #mobile-navbar #hamburger-menu .column {
     padding-left: 10%;
 }
-
+#mobile-navbar, #navbar, #right {
+    padding: 0;
+}
+#right .item {
+    padding: 0;
+}
 #hamburger-menu {
     display: none;
 }
