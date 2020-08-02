@@ -4,3 +4,10 @@ $(document).ready(function(){
         $('#june_image.ui.modal').modal('show');
     });
 });
+
+$(document).ready(function(){
+    $("#july").click(function(e){
+        e.preventDefault();
+        $('#july_image.ui.modal').modal('show');
+    });
+});
