@@ -1,5 +1,5 @@
 <nav id="mobile-navbar" class="mobile only">
-    <div class="ui grid">
+    <div id="hamburger" class="ui grid">
         <div class="left floated left aligned eight wide column">
             <a href="index.html">
                 <img class="image" src="public/assets/imgs/logo.png" alt="">
@@ -9,18 +9,30 @@
             <i id="hamburger-icon" class="bars icon"></i>
         </div>
     </div>
-    <div id="hamburger-menu" class="right stackable menu">
-        <a href="about/team.html" class="item">Our Team</a>
-        <a href="about/chapters.html" class="item">Chapters</a>
-        <a href="calendar.html" class="item">Calendar</a>
-        <a href="resources/newsletter.html" class="disabled item">Newsletter</a>
-        <a href="resources/curriculum.html" class="disabled item">Curriculum</a>
-        <a href="contact.html" class="item">Contact Us</a>
+    <div id="hamburger-menu" class="ui two column grid">
+        <div class="left floated left aligned column">
+            <a href="team.html" class="item">Our Team</a>
+        </div>
+        <div class="left floated left aligned column">
+            <a href="chapters.html" class="item">Chapters</a>
+        </div>
+        <div class="left floated left aligned column">
+            <a href="calendar.html" class="item">Calendar</a>
+        </div>
+        <div class="left floated left aligned column">
+            <a href="newsletter.html" class="item">Newsletter</a>
+        </div>
+        <div class="left floated left aligned column">
+            <a href="curriculum.html" class="disabled item">Curriculum</a>
+        </div>
+        <div class="left floated left aligned column">
+            <a href="contact.html" class="item">Contact Us</a>
+        </div>
     </div>
 </nav>
 <div class="ui container">
     <!-- banner -->
-    <section id="banner" class="part section">
+    <section id="banner" class="section">
         <!-- navbar -->
         <nav id="navbar" class="ui secondary menu stackable computer only">
             <div class="item">
@@ -28,20 +40,20 @@
                     <img class="image" src="public/assets/imgs/logo.png" alt="">
                 </a>
             </div>
-            <div id="right" class="right stackable menu">
+            <div class="right stackable menu">
                 <div class="ui simple dropdown item">
                     About <i class="dropdown icon"></i>
                     <div class="stackable menu">
-                        <a href="about/team.html" class="item">Our Team</a>
-                        <a href="about/chapters.html" class="item">Chapters</a>
+                        <a href="team.html" class="item">Our Team</a>
+                        <a href="chapters.html" class="item">Chapters</a>
                     </div>
                 </div>
                 <a href="calendar.html" class="item">Calendar</a>
                 <div class="ui simple dropdown item">
                     Resources <i class="dropdown icon"></i>
                     <div class="menu">
-                        <a href="resources/newsletter.html" class="disabled item">Newsletter</a>
-                        <a href="resources/curriculum.html" class="disabled item">Curriculum</a>
+                        <a href="newsletter.html" class="item">Newsletter</a>
+                        <a href="curriculum.html" class="disabled item">Curriculum</a>
                     </div>
                 </div>
                 <a href="contact.html" class="item">Contact Us</a>
