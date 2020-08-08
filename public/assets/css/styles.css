@@ -45,9 +45,6 @@ body {
 #navbar {
     background-color: #F5F3F3;
 }
-nav {
-    height: 70px;
-}
 .section {
     opacity: 0;
     transition: all 0.5s ease-out;
@@ -76,7 +73,7 @@ img {
 .center {
     text-align: center;
 }
-.centered-v, #title, #phone, #join, #experience_text, #resources_text, #learning_text, #join_text {
+.centered-v, #title, #phone, #join, #experience_text, #resources_text, #learning_text, #join_text, #virtual {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -93,6 +90,16 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.centered-list {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    padding: auto;
+}
+.centered-list li {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 button, .button {
     box-shadow: 0 15px 40px rgba(197, 241, 241, 0.9)
