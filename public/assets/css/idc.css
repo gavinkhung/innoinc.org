@@ -30,3 +30,21 @@
     width: 100%;
     height: 100%;
 }
+.fade-up {
+    opacity: 0;
+    transform: translateY(75px);
+    transition: all 1.0s ease-out;
+}
+.fade-up-active {
+    opacity: 1;
+    transform: translateY(-75px);
+}
+.fade-up-slow {
+    opacity: 0;
+    transform: translateY(75px);
+    transition: all 1.1s ease-out;
+}
+.fade-up-slow-active {
+    opacity: 1;
+    transform: translateY(-75px);
+}

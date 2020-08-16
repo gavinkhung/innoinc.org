@@ -8,4 +8,22 @@ $(document).ready(function(){
         e.preventDefault();
         $('#prospectus_image.ui.modal').modal('show');
     });
+
+    let controller = new ScrollMagic.Controller();
+    $('.fade-up').each(function(){
+        new ScrollMagic.Scene({
+            triggerElement: this
+        })
+        .setClassToggle(this, 'fade-up-active')
+        .reverse(false)
+        .addTo(controller);
+    });
+    $('.fade-up-slow').each(function(){
+        new ScrollMagic.Scene({
+            triggerElement: this
+        })
+        .setClassToggle(this, 'fade-up-slow-active')
+        .reverse(false)
+        .addTo(controller);
+    });
 });
