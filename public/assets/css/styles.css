@@ -93,9 +93,14 @@ img {
 }
 .centered-list {
     list-style-type: none;
-    text-align: center;
     width: 100%;
     padding: auto;
+}
+.text-align-right {
+    text-align: right;
+}
+.text-align-left {
+    text-align: left;
 }
 .centered-list li {
     margin-top: 20px;
