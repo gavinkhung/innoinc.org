@@ -1,5 +1,10 @@
+#idc-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    display: block;
+}
 #virtual, #learning, #competitors, #description, #details {
-    margin: 5%;
     font-size: 1.2rem;
 }
 #virtual .header {
@@ -8,7 +13,7 @@
 #learning .header {
     color: #BC68C6;
 }
-#competitors .header {
+#competitors .header, #title{
     color: #7257B3;
 }
 #description {
@@ -32,21 +37,21 @@
 }
 .fade-up {
     opacity: 0;
-    transform: translateY(75px);
+    transform: translateY(50px);
     transition: all 1.0s ease-out;
 }
 .fade-up-active {
     opacity: 1;
-    transform: translateY(-75px);
+    transform: translateY(-50px);
 }
 .fade-up-slow {
     opacity: 0;
-    transform: translateY(75px);
+    transform: translateY(50px);
     transition: all 1.1s ease-out;
 }
 .fade-up-slow-active {
     opacity: 1;
-    transform: translateY(-75px);
+    transform: translateY(-50px);
 }
 @media only screen and (max-width: 767px) {
     .fade-up {
