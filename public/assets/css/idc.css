@@ -4,8 +4,14 @@
     width: 10%;
     display: block;
 }
-#virtual, #learning, #competitors, #description, #details {
+#virtual, #learning, #competitors{
     font-size: 1.2rem;
+}
+#virtual {
+    margin-top: 2.5%;
+}
+#description, #details {
+    margin: 5%;
 }
 #virtual .header {
     color: #346C77;
