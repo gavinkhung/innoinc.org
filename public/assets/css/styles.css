@@ -29,6 +29,9 @@
 #image {
     height: 20px;
 }
+#description > p {
+    margin: 5%;
+}
 p.ui.header, div.header, div.ui.header, a.header, h1.ui.header, h2.ui.header, h3.ui.header, h4.ui.header, h5.ui.header, h6.ui.header, a.ui.header, a.ui.button {
     font-family: 'GlacialIndifferenceRegular';
 }

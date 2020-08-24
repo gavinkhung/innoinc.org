@@ -10,9 +10,9 @@
 #virtual {
     margin-top: 2.5%;
 }
-#description, #details {
+/* #description, #details {
     margin: 5%;
-}
+} */
 #virtual .header {
     color: #346C77;
 }
