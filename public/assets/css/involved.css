@@ -1,0 +1,16 @@
+#description {
+    font-size: 1.5rem;
+}
+#membership, #mentorship, #sponsorship{
+    font-size: 1.2rem;
+    line-height: 1;
+}
+#membership .header {
+    color: #346C77;
+}
+#mentorship .header {
+    color: #BC68C6;
+}
+#sponsorship .header{
+    color: #7257B3;
+}
