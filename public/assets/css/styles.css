@@ -119,7 +119,7 @@ form {
     flex-direction: column;
 }
 #join, #footer {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../imgs/backgrounds/pbw.svg");
 }
 textarea {

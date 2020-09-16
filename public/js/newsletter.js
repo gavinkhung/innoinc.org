@@ -3,11 +3,12 @@ $(document).ready(function(){
         e.preventDefault();
         $('#june_image.ui.modal').modal('show');
     });
-});
-
-$(document).ready(function(){
     $("#july").click(function(e){
         e.preventDefault();
         $('#july_image.ui.modal').modal('show');
+    });
+    $("#august").click(function(e){
+        e.preventDefault();
+        $('#august_image.ui.modal').modal('show');
     });
 });
