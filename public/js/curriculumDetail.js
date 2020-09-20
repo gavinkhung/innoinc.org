@@ -2,8 +2,11 @@ $(document).ready(() => {
     const db = firebase.firestore();
 
     const contentDiv = document.getElementById('curriculum-detail-content');
-    const row = document.createElement("div");
-    row.classList.add('row');
+    const headerRow = document.createElement("div");
+    headerRow.classList.add('row');
+
+    const playerRow = document.createElement("div");
+    playerRow.classList.add('row');
 
     // parse query strings
     const params = new URLSearchParams(window.location.search);
@@ -19,9 +22,9 @@ $(document).ready(() => {
                 const { title, embedID } = contentSnapshot.data();
 
                 const p = document.createElement('p');
+                p.classList.add('center');
                 p.innerHTML = title;
 
-                // 
                 const playerDiv = document.createElement('div');
                 playerDiv.setAttribute("id", "player");
                 playerDiv.classList.add('plyr__video-embed');
@@ -33,18 +36,16 @@ $(document).ready(() => {
 
                 playerDiv.appendChild(iframe);
 
-                row.appendChild(p);
-                row.appendChild(playerDiv);
+                headerRow.appendChild(p);
+                playerRow.appendChild(playerDiv);
+
+                contentDiv.appendChild(headerRow);
+                contentDiv.appendChild(playerRow);
             } else {
-                const p = document.createElement('p');
-                p.innerHTML = "unable to find content in firestore";
-                row.appendChild(p);
+                window.location = 'curriculum.html';
             }
         });
     } else {
-        const p = document.createElement('p');
-        p.innerHTML = "unable to find content";
-        row.appendChild(p);
+        window.location = 'curriculum.html';
     }
-    contentDiv.appendChild(row);
 });

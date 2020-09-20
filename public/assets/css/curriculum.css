@@ -1,0 +1,16 @@
+.list {
+    width: 100%;
+}
+.item {
+    cursor: pointer;
+}
+.subject-name {
+    padding-bottom: 3%;
+}
+#curriculum .row {
+    border: 1px solid grey;
+    font-size: 0.8em;
+    border-radius: 3px;
+    margin-top: 5%;
+    margin-top: 2%;
+}

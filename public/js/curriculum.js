@@ -12,15 +12,32 @@ $(document).ready(function(){
                 const row = document.createElement('div');
                 row.classList.add('row');
 
-                const h3 = document.createElement('h3');
-                h3.innerHTML = subjectName;
+                const listRow = document.createElement('div');
+                listRow.classList.add('sixteen');
+                listRow.classList.add('wide');
+                listRow.classList.add('column');
+                const headerRow = document.createElement('div');
+                headerRow.classList.add('sixteen');
+                headerRow.classList.add('wide');
+                headerRow.classList.add('column');
+                headerRow.classList.add('subject-name');
+
+                const h2 = document.createElement('h2');
+                h2.classList.add('ui');
+                h2.classList.add('header');
+                h2.innerHTML = subjectName;
                 const list = document.createElement('div');
                 list.classList.add('ui');
+                list.classList.add('relaxed');
+                list.classList.add('divided');
                 list.classList.add('list');
                 list.setAttribute('id', subjectId);
 
-                row.appendChild(h3);
-                row.appendChild(list);
+                headerRow.appendChild(h2);
+                listRow.appendChild(list);
+
+                row.appendChild(headerRow);
+                row.appendChild(listRow);
 
                 circulumSubjects.appendChild(row);
 
@@ -39,14 +56,14 @@ $(document).ready(function(){
                                 content.classList.add('content');
 
                                 const header = document.createElement('p');
-                                header.classList.add('header');
                                 header.innerHTML = title;
                                 header.addEventListener('click', () => {
                                     window.location = `curriculum-detail.html?subject=${subjectName}&content=videos&uid=${uid}`;
                                 });
 
                                 content.appendChild(header);
-                                list.appendChild(content);
+                                item.appendChild(content);
+                                list.appendChild(item);
                             }
                         })
                     }
