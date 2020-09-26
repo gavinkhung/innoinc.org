@@ -7,6 +7,9 @@
 .subject-name {
     padding-bottom: 3%;
 }
+.subheader-name {
+    padding-bottom: 1%;
+}
 #curriculum .row {
     border: 1px solid grey;
     font-size: 0.8em;
