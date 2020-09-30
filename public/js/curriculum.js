@@ -74,7 +74,7 @@ $(document).ready(function(){
                                         const header = document.createElement('p');
                                         header.innerHTML = title;
                                         header.addEventListener('click', () => {
-                                            window.location = `curriculum-detail.html?subject=${subjectName}&content=videos&uid=${uid}`;
+                                            window.location = `curriculum-detail.html?subject=${subjectName}&content=${subcollectionName}&uid=${uid}`;
                                         });
 
                                         content.appendChild(header);
