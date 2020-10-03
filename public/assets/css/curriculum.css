@@ -4,10 +4,8 @@
 .item {
     cursor: pointer;
 }
-.subject-name {
-    padding-bottom: 3%;
-}
 .subheader-name {
+    padding-top: 2.5%;
     padding-bottom: 1%;
 }
 #curriculum .row {
