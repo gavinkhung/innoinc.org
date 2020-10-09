@@ -11,4 +11,8 @@ $(document).ready(function(){
         e.preventDefault();
         $('#august_image.ui.modal').modal('show');
     });
+    $("#september").click(function(e){
+        e.preventDefault();
+        $('#september_image.ui.modal').modal('show');
+    });
 });
