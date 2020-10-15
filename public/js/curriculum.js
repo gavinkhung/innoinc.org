@@ -18,6 +18,7 @@ $(document).ready(function(){
                     headerRow.classList.add('wide');
                     headerRow.classList.add('column');
                     headerRow.classList.add('subject-name');
+                    headerRow.setAttribute('id', subjectId);
                     const h2 = document.createElement('h2');
                     h2.classList.add('ui');
                     h2.classList.add('header');
@@ -48,7 +49,6 @@ $(document).ready(function(){
                             list.classList.add('relaxed');
                             list.classList.add('divided');
                             list.classList.add('list');
-                            list.setAttribute('id', subjectId);
 
                             subHeaderRow.appendChild(h3);
                             listRow.appendChild(list);
@@ -72,8 +72,9 @@ $(document).ready(function(){
                                             const content = document.createElement('div');
                                             content.classList.add('content');
 
-                                            const header = document.createElement('p');
+                                            const header = document.createElement('a');
                                             header.innerHTML = title;
+                                            header.classList.add('link');
                                             header.addEventListener('click', () => {
                                                 window.location = `curriculum-detail.html?subject=${subjectName}&content=${subcollectionName}&uid=${uid}`;
                                             });

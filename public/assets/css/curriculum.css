@@ -18,3 +18,9 @@
 img {
     max-width: 100%;
 }
+.link {
+    color: #7257B3;
+}
+.link:hover {
+    text-decoration: underline;
+}
