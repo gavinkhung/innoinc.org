@@ -106,6 +106,7 @@ $(document).ready(function(){
         const subjectName = params.get('subject');
 
         const db = firebase.firestore();
+
         const curriculumRef = db.collection('curriculum').doc(subjectName);
         curriculumRef.get().then(curriculumSnapshot => {
             if(curriculumSnapshot && curriculumSnapshot.exists){
@@ -159,7 +160,7 @@ $(document).ready(function(){
                                 if(videosDocs){
                                     videosDocs.map(videoDoc => {
                                         const uid = videoDoc.id;
-                                        const { title } = videoDoc.data();
+                                        const { title, studyGuideUrl } = videoDoc.data();
                                         if(title){
                                             const item = document.createElement('div');
                                             item.classList.add('item');
@@ -174,8 +175,28 @@ $(document).ready(function(){
                                                 window.location = `curriculum-content.html?subject=${subjectName}&content=${subcollectionName}&uid=${uid}`;
                                             });
 
+                                            const rightContent = document.createElement('div');
+                                            rightContent.classList.add('right');
+                                            rightContent.classList.add('floated');
+                                            rightContent.classList.add('content');
+
+                                            const studyGuideButton = document.createElement('button');
+                                            studyGuideButton.innerHTML = "Study Guide";
+                                            studyGuideButton.classList.add('ui');
+                                            studyGuideButton.classList.add('button');
+                                            studyGuideButton.addEventListener('click', () => {
+                                                if(studyGuideUrl){
+                                                    console.log(studyGuideUrl)
+                                                }
+                                                // $('#september_image.ui.modal').modal('show');
+                                            });
+
                                             content.appendChild(header);
+                                            rightContent.appendChild(studyGuideButton);
+
+                                            item.appendChild(rightContent);
                                             item.appendChild(content);
+
                                             list.appendChild(item);
                                         }
                                     })

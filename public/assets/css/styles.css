@@ -41,6 +41,9 @@ div.card div.content a.header {
 h2 {
     font-size: 0.5em;
 }
+button, .ui.button {
+    font-family: 'GlacialIndifferenceRegular';
+}
 body {
     color: black;
     background-color: #F5F3F3;
@@ -127,6 +130,9 @@ textarea {
 }
 .underline {
     text-decoration: underline;
+}
+footer {
+    margin-top: 3rem;
 }
 footer a {
     color: black;
