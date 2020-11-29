@@ -57,7 +57,7 @@ $(document).ready(function(){
                             row.appendChild(listRow);
 
                             circulumSubjects.appendChild(row);
-
+                            
                             const videosRef = db.collection('curriculum').doc(subjectName).collection(subcollectionName);
                             videosRef.get().then(videosSnapshot => {
                                 const videosDocs = videosSnapshot.docs;

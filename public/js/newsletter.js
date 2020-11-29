@@ -15,4 +15,13 @@ $(document).ready(function(){
         e.preventDefault();
         $('#september_image.ui.modal').modal('show');
     });
+
+    $("#october").click(function(e){
+        e.preventDefault();
+        $('#october_image.ui.modal').modal('show');
+    });
+    $("#november").click(function(e){
+        e.preventDefault();
+        $('#november_image.ui.modal').modal('show');
+    });
 });
