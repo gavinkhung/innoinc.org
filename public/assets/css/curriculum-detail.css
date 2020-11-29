@@ -7,6 +7,9 @@ iframe {
     font-size: 2rem;
     font-family: 'GlacialIndifferenceRegular';
 }
+#circulum-subject button {
+    background: #BC68C6;
+}
 .subheader-name {
     margin-top: 2rem!important;
     margin-bottom: 1rem!important;

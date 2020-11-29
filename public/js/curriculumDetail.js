@@ -197,7 +197,6 @@ $(document).ready(function(){
                                             studyGuideButton.classList.add('button');
                                             studyGuideButton.addEventListener('click', () => {
                                                 if(studyGuideUrl){
-                                                    console.log($(`${modalId}.ui.modal`));
                                                     $(`#${modalId}.ui.modal`).modal('show');
                                                 }
                                             });
