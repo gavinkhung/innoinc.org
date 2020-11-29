@@ -175,6 +175,17 @@ $(document).ready(function(){
                                                 window.location = `curriculum-content.html?subject=${subjectName}&content=${subcollectionName}&uid=${uid}`;
                                             });
 
+                                            const modalId = title.replace(/\s+/g, '');
+                                            const studyGuideModal = document.createElement('div');
+                                            studyGuideModal.classList.add('ui');
+                                            studyGuideModal.classList.add('modal');
+                                            studyGuideModal.setAttribute("id", modalId);
+
+                                            const studyGuideModalImage = document.createElement('img');
+                                            studyGuideModalImage.setAttribute("src", studyGuideUrl);
+
+                                            studyGuideModal.appendChild(studyGuideModalImage);
+
                                             const rightContent = document.createElement('div');
                                             rightContent.classList.add('right');
                                             rightContent.classList.add('floated');
@@ -186,14 +197,15 @@ $(document).ready(function(){
                                             studyGuideButton.classList.add('button');
                                             studyGuideButton.addEventListener('click', () => {
                                                 if(studyGuideUrl){
-                                                    console.log(studyGuideUrl)
+                                                    console.log($(`${modalId}.ui.modal`));
+                                                    $(`#${modalId}.ui.modal`).modal('show');
                                                 }
-                                                // $('#september_image.ui.modal').modal('show');
                                             });
 
                                             content.appendChild(header);
                                             rightContent.appendChild(studyGuideButton);
-
+                                            
+                                            item.appendChild(studyGuideModal);
                                             item.appendChild(rightContent);
                                             item.appendChild(content);
 
