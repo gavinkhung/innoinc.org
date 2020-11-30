@@ -325,5 +325,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="public/js/index.js"></script>
     <script src="public/js/chapters.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyBzTsdyqEz9K5P21MwbSINDiGOvswSz_jM",
+          authDomain: "innoinc-9a2b8.firebaseapp.com",
+          databaseURL: "https://innoinc-9a2b8.firebaseio.com",
+          projectId: "innoinc-9a2b8",
+          storageBucket: "innoinc-9a2b8.appspot.com",
+          messagingSenderId: "404510069985",
+          appId: "1:404510069985:web:d0a51e26145111de3393a0"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        firebase.analytics();
+    </script>
 </body>
 </html>

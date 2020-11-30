@@ -91,7 +91,7 @@
     <div class="ui container">
         <section class="section part">
             <h2 class="ui huge header center">CURRICULUM</h2>
-            <div class="ui equal width grid">
+            <div class="ui equal width stackable grid">
                 <div class="column">
                     <a href="curriculum-detail.html?subject=Biology">
                         <img src="public/assets/imgs/curriculum/bio.png" alt="">
@@ -180,6 +180,8 @@
           appId: "1:404510069985:web:d0a51e26145111de3393a0"
         };
         firebase.initializeApp(firebaseConfig);
+
+        firebase.analytics();
     </script>
 
     <script src="public/js/index.js"></script>
