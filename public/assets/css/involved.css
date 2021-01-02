@@ -1,24 +1,26 @@
 #description {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-#membership, #mentorship, #sponsorship{
-    font-size: 1.2rem;
-    line-height: 1;
+#membership,
+#mentorship,
+#sponsorship {
+  font-size: 1.2rem;
+  line-height: 1;
 }
 #membership .header {
-    color: #346C77;
+  color: #346c77;
 }
 #mentorship .header {
-    color: #BC68C6;
+  color: #bc68c6;
 }
-#sponsorship .header{
-    color: #7257B3;
+#sponsorship .header {
+  color: #7257b3;
 }
 #mentorship_image img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 #sponsorship_image img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }

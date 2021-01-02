@@ -1,20 +1,20 @@
 iframe {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 #circulum-subject-title {
-    margin-top: 2rem;
-    font-size: 2rem;
-    font-family: 'GlacialIndifferenceRegular';
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: 'GlacialIndifferenceRegular';
 }
 #circulum-subject button {
-    background: #BC68C6;
+  background: #bc68c6;
 }
 .subheader-name {
-    margin-top: 2rem!important;
-    margin-bottom: 1rem!important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 .ui.modal img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }

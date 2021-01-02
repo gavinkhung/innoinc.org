@@ -1,26 +1,26 @@
 .list {
-    width: 100%;
+  width: 100%;
 }
 .item {
-    cursor: pointer;
+  cursor: pointer;
 }
 .subheader-name {
-    padding-top: 2.5%;
-    padding-bottom: 1%;
+  padding-top: 2.5%;
+  padding-bottom: 1%;
 }
 #curriculum .row {
-    border: 1px solid grey;
-    font-size: 0.8em;
-    border-radius: 3px;
-    margin-top: 5%;
-    margin-top: 2%;
+  border: 1px solid grey;
+  font-size: 0.8em;
+  border-radius: 3px;
+  margin-top: 5%;
+  margin-top: 2%;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .link {
-    color: #7257B3;
+  color: #7257b3;
 }
 .link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

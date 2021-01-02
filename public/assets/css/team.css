@@ -1,8 +1,8 @@
 .image {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .image img {
-    width: 30vw;
-    height: 30vw;
+  width: 30vw;
+  height: 30vw;
 }
