@@ -1,7 +1,15 @@
 $(document).ready(function () {
-  $('#guidelines_text').click(function (e) {
+  $('#conference_guidelines').click(function (e) {
     e.preventDefault();
-    $('#guidelines_image.ui.modal').modal('show');
+    $('#conference_guidelines_image.ui.modal').modal('show');
+  });
+  $('#judging_guidelines').click(function (e) {
+    e.preventDefault();
+    $('#judging_guidelines_image.ui.modal').modal('show');
+  });
+  $('#schedule').click(function (e) {
+    e.preventDefault();
+    $('#schedule_image.ui.modal').modal('show');
   });
 
   $('#prospectus_text').click(function (e) {
