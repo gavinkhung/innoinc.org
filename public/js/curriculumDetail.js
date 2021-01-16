@@ -166,7 +166,11 @@ $(document).ready(function () {
                     if (videosDocs) {
                       videosDocs.map((videoDoc) => {
                         const uid = videoDoc.id;
-                        const { title, studyGuideUrl } = videoDoc.data();
+                        const {
+                          title,
+                          studyGuideUrl,
+                          embedID,
+                        } = videoDoc.data();
                         if (title) {
                           const item = document.createElement('div');
                           item.classList.add('item');
@@ -178,7 +182,9 @@ $(document).ready(function () {
                           header.innerHTML = title;
                           header.classList.add('link');
                           header.addEventListener('click', () => {
-                            window.location = `curriculum-content.html?subject=${subjectName}&content=${subcollectionName}&uid=${uid}`;
+                            if (embedID && embedID.length) {
+                              window.location = `curriculum-content.html?subject=${subjectName}&content=${subcollectionName}&uid=${uid}`;
+                            }
                           });
 
                           const modalId = title.replace(/\s+/g, '');
@@ -209,7 +215,7 @@ $(document).ready(function () {
                           studyGuideButton.classList.add('ui');
                           studyGuideButton.classList.add('button');
                           studyGuideButton.addEventListener('click', () => {
-                            if (studyGuideUrl) {
+                            if (studyGuideUrl && studyGuideUrl.length) {
                               $(`#${modalId}.ui.modal`).modal('show');
                             }
                           });

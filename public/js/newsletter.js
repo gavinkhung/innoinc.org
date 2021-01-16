@@ -28,4 +28,8 @@ $(document).ready(function () {
     e.preventDefault();
     $('#december_image.ui.modal').modal('show');
   });
+  $('#january').click(function (e) {
+    e.preventDefault();
+    $('#january_image.ui.modal').modal('show');
+  });
 });
