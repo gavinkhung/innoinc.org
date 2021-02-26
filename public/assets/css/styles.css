@@ -91,7 +91,7 @@ img {
   opacity: 1;
 }
 .center {
-  text-align: center;
+  text-align: center !important;
 }
 .centered-v,
 #title,
@@ -101,6 +101,7 @@ img {
 #resources_text,
 #learning_text,
 #join_text,
+#sponsor_text,
 #virtual {
   display: -webkit-box;
   display: -webkit-flex;
@@ -179,6 +180,9 @@ footer a {
 .fade-up-slow-active {
   opacity: 1;
   transform: translateY(-50px);
+}
+.column img {
+  max-width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .fade-up {
