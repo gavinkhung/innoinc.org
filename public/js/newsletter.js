@@ -32,4 +32,8 @@ $(document).ready(function () {
     e.preventDefault();
     $('#january_image.ui.modal').modal('show');
   });
+  $('#february').click(function (e) {
+    e.preventDefault();
+    $('#february_image.ui.modal').modal('show');
+  });
 });
