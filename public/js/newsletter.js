@@ -36,4 +36,16 @@ $(document).ready(function () {
     e.preventDefault();
     $('#february_image.ui.modal').modal('show');
   });
+  $('#march').click(function (e) {
+    e.preventDefault();
+    $('#march_image.ui.modal').modal('show');
+  });
+  $('#april').click(function (e) {
+    e.preventDefault();
+    $('#april_image.ui.modal').modal('show');
+  });
+  $('#may').click(function (e) {
+    e.preventDefault();
+    $('#may_image.ui.modal').modal('show');
+  });
 });
