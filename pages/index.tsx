@@ -1,78 +1,151 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ReactNode, FC } from 'react';
 
 const IndexPage: FC = () => {
   return (
-    <div className="space-y-2">
-      <div className="flex flex-col sm:flex-row">
-        <div className="flex-1">
-          <h1 className="text-4xl">INNO</h1>
-          <h2>
-            A student run non profit organization that provides COMPETITIVE
-            OPPORTUNITIES to introduce students to biotech concepts and the
-            innovation behind them.
-          </h2>
-        </div>
-        <div className="flex-1">Home 1</div>
-      </div>
-      <div className="">
-        <p>
-          We are committed to providing our members with an ENRICHING, HOLISTIC,
-          HANDS-ON EXPERIENCE with biological and computational concepts,
-          fostering creativity in all our members and allowing them to use their
-          skills to make a real-world impact.
-        </p>
-      </div>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
-        <div className="flex flex-col justify-center bg-gray-400">
-          <h3>EXPERIENCE</h3>
-          <p>
-            Each member will be able to create a product directly applicable to
-            real world fields
-          </p>
-        </div>
-        <div className="flex flex-col justify-center bg-gray-400">
-          <h3>LEARNING</h3>
-          <p>
-            Robust curriculum and workshops will educate members about the
-            innovation behind biotech
-          </p>
-        </div>
-        <div className="flex flex-col justify-center bg-gray-400">
-          <h3>CONNECTIONS</h3>
-          <p>
-            We connect and allow members to foster relationships with industry
-            professionals
-          </p>
-        </div>
-        <div className="flex flex-col justify-center bg-gray-400">
-          <h3>RESOURCES</h3>
-          <p>
-            We provide members with the resources and tools necessary to create
-            impactful technology
-          </p>
-        </div>
-      </div>
-      <div className="">
-        <h2>MAKE AN IMAPCT</h2>
-        <div className="flex flex-row">
-          <div className="flex-1">
-            Create an Inno chapter at your school today to bring the innovation
-            that is paving the world of tomorrow to your school and community.{' '}
+    <div className="">
+      <div className="px-8 sm:px-4">
+        <div className="flex flex-col sm:flex-row max-w-4xl mx-auto">
+          <div className="flex-1 space-y-4">
+            <h1 className="text-6xl md:text-8xl">INNO</h1>
+            <h2 className="text-md md:text-lg">
+              A student run non profit organization that provides COMPETITIVE
+              OPPORTUNITIES to introduce students to biotech concepts and the
+              innovation behind them.
+            </h2>
+            <div className="flex flex-row space-x-2">
+              <button
+                type="submit"
+                className="text-lg bg-blue-400 border-gray-300 rounded-md shadow-sm py-2 px-4 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-800"
+              >
+                Join
+              </button>
+              <button
+                type="submit"
+                className="text-lg bg-blue-400 border-gray-300 rounded-md shadow-sm py-2 px-4 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-800"
+              >
+                Join
+              </button>
+            </div>
           </div>
-          <div className="flex-1">img</div>
+          <div className="flex-1 flex flex-row justify-center">
+            <img src="/img/home/home-1.png" alt="" />
+          </div>
         </div>
       </div>
-      <div className="">
-        <h2>SPONSORS</h2>
-        <div className="flex flex-col sm:flex-row justify-center">
-          <div className="div">1</div>
-          <div className="div">2</div>
-          <div className="div">3</div>
+
+      <div className="px-8 sm:px-4 py-4 sm:py-16">
+        <div className="flex flex-col sm:flex-row max-w-4xl mx-auto">
+          <p className="text-center text-lg md:text-2xl">
+            We are committed to providing our members with an ENRICHING,
+            HOLISTIC, HANDS-ON EXPERIENCE with biological and computational
+            concepts, fostering creativity in all our members and allowing them
+            to use their skills to make a real-world impact.
+          </p>
         </div>
-        <h3>WANT TO SUPPORT INNO?</h3>
+      </div>
+
+      <div className="px-8 sm:px-4 ">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
+            <GridSquare
+              title="Experience"
+              body="Each member will be able to create a product directly applicable to real world fields"
+              imageUrl="/img/home/home-2.png"
+            />
+            <GridSquare
+              title="LEARNING"
+              body="Robust curriculum and workshops will educate members about the innovation behind biotech"
+              imageUrl="/img/home/home-3.png"
+            />
+            <GridSquare
+              title="CONNECTIONS"
+              body="We connect and allow members to foster relationships with industry professionals"
+              imageUrl="/img/home/home-4.png"
+            />
+            <GridSquare
+              title="RESOURCES"
+              body="We provide members with the resources and tools necessary to create impactful technology "
+              imageUrl="/img/home/home-5.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="px-8 sm:px-4 py-4">
+        <div className="max-w-4xl mx-auto">
+          <Hero
+            title="Make An Impact"
+            body="Create an Inno chapter at your school today to bring the innovation that is paving the world of tomorrow to your school and community. "
+            imageUrl="/img/home/home-6.png"
+          />
+        </div>
+      </div>
+
+      <div className="px-8 sm:px-4 py-4">
+        <div className="flex flex-col">
+          <h2 className="text-center text-4xl">SPONSORS</h2>
+          <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
+            <Sponsor name="AoPS" imageUrl="/img/home/sponsor-1.png" />
+            <Sponsor name="Magoosh" imageUrl="/img/home/sponsor-2.png" />
+            <Sponsor name="Wolfram" imageUrl="/img/home/sponsor-3.png" />
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 export default IndexPage;
+
+type GridSquareProp = {
+  title: string;
+  body: string;
+  imageUrl: string;
+};
+
+const GridSquare: FC<GridSquareProp> = ({ title, body, imageUrl }) => {
+  return (
+    <div className="flex flex-col justify-center space-y-2">
+      <h3 className="text-center uppercase text-3xl">{title}</h3>
+      <p className="text-center">{body}</p>
+      <img src={imageUrl} />
+    </div>
+  );
+};
+
+type HeroProp = {
+  title: string;
+  body: string;
+  imageUrl: string;
+};
+
+const Hero: FC<HeroProp> = ({ title, body, imageUrl }) => {
+  return (
+    <div className="flex flex-col">
+      <h2 className="text-center uppercase text-3xl">{title}</h2>
+      <div className="flex flex-row">
+        <div className="flex-1 flex flex-col justify-center">
+          <p className="text-left">{body}</p>
+        </div>
+        <div className="flex-1">
+          <img src={imageUrl} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+type SponsorProp = {
+  name: string;
+  imageUrl: string;
+};
+
+const Sponsor: FC<SponsorProp> = ({ name, imageUrl }) => {
+  return (
+    <div className="flex flex-col">
+      <img src={imageUrl} />
+      <p className="text-center text-md md:text-xl">{name}</p>
+    </div>
+  );
+};
