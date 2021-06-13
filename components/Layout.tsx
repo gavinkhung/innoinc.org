@@ -12,9 +12,7 @@ const Layout: FC<Props> = ({ children }) => {
     <div className="font-sans overflow-hidden bg-white">
       <Nav />
       <main className="">
-        <div className="flex flex-col justify-start items-start w-full min-h-screen">
-          {children}
-        </div>
+        <div className="w-full min-h-screen">{children}</div>
       </main>
       <Footer />
     </div>

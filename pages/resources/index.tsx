@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { ReactNode, FC } from 'react';
+import { FC } from 'react';
 const ResourcesPage: FC = () => {
   return (
     <>
