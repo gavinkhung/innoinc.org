@@ -1,31 +1,39 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-import Hero from '@components/Hero';
+import Hero from "@components/Hero";
 
 const IndexPage: FC = () => {
   return (
-    <div className="">
+    <div className="space-y-6">
       <div className="px-8 sm:px-4">
         <div className="flex flex-col sm:flex-row max-w-4xl mx-auto">
-          <div className="flex-1 space-y-4">
-            <h1 className="text-6xl md:text-8xl">INNO</h1>
-            <h2 className="text-md md:text-lg">
-              A student run non profit organization that provides COMPETITIVE
-              OPPORTUNITIES to introduce students to biotech concepts and the
-              innovation behind them.
+          <div className="flex flex-col flex-1 space-y-4">
+            <h1 className="text-6xl md:text-9xl text-primary-red font-bold">
+              INNO
+            </h1>
+            <h2 className="text-md md:text-xl text-primary-red">
+              A student run non profit organization that provides{" "}
+              <span className="text-primary-blue-darker font-semibold">
+                COMPETITIVE OPPORTUNITIES
+              </span>{" "}
+              to introduce students to biotech concepts and the{" "}
+              <span className="text-primary-blue-darker font-semibold">
+                INNOVATION
+              </span>{" "}
+              behind them.
             </h2>
             <div className="flex flex-row space-x-2">
               <button
                 type="submit"
-                className="text-lg bg-blue-400 border-gray-300 rounded-md shadow-sm py-2 px-4 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-800"
+                className="text-lg bg-primary-blue border-gray-300 rounded-md shadow-sm py-2 px-4 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-800"
               >
                 Join
               </button>
               <button
                 type="submit"
-                className="text-lg bg-blue-400 border-gray-300 rounded-md shadow-sm py-2 px-4 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-800"
+                className="text-lg bg-primary-blue-darker border-gray-300 rounded-md shadow-sm py-2 px-4 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-800"
               >
-                Join
+                Donate
               </button>
             </div>
           </div>
@@ -35,13 +43,27 @@ const IndexPage: FC = () => {
         </div>
       </div>
 
-      <div className="px-8 sm:px-4 py-4 sm:py-16">
-        <div className="flex flex-col sm:flex-row max-w-4xl mx-auto">
-          <p className="text-center text-lg md:text-2xl">
-            We are committed to providing our members with an ENRICHING,
-            HOLISTIC, HANDS-ON EXPERIENCE with biological and computational
-            concepts, fostering creativity in all our members and allowing them
-            to use their skills to make a real-world impact.
+      <div className="px-8 sm:px-4">
+        <div className="flex flex-col sm:flex-row max-w-4xl mx-auto bg-primary-blue py-4 sm:py-12 px-2">
+          <p className="text-center text-gray-100 text-md font-normal md:text-2xl">
+            We are committed to providing our members with an{" "}
+            <span className="uppercase text-white bg-primary-blue-darker">
+              ENRICHING
+            </span>
+            ,{" "}
+            <span className="uppercase text-white bg-primary-blue-darker">
+              HOLISTIC
+            </span>
+            ,{" "}
+            <span className="uppercase text-white bg-primary-blue-darker">
+              HANDS-ON EXPERIENCE
+            </span>{" "}
+            with biological and computational concepts, fostering creativity in
+            all our members and allowing them to use their skills to make a{" "}
+            <span className="uppercase text-white bg-primary-blue-darker">
+              real-world impact
+            </span>
+            .
           </p>
         </div>
       </div>
@@ -53,18 +75,26 @@ const IndexPage: FC = () => {
               title="Experience"
               body="Each member will be able to create a product directly applicable to real world fields"
               imageUrl="/img/home/home-2.png"
+              textColor="text-gray-100"
+              bgColor="bg-primary-red"
             />
             <GridSquare
               title="LEARNING"
               body="Robust curriculum and workshops will educate members about the innovation behind biotech"
               imageUrl="/img/home/home-3.png"
+              textColor="text-gray-900"
+              bgColor="bg-gray-100"
             />
             <GridSquare
               title="CONNECTIONS"
               body="We connect and allow members to foster relationships with industry professionals"
               imageUrl="/img/home/home-4.png"
+              textColor="text-primary-red"
+              bgColor="bg-primary-blue"
             />
             <GridSquare
+              textColor="text-gray-100"
+              bgColor="bg-primary-blue-darker"
               title="RESOURCES"
               body="We provide members with the resources and tools necessary to create impactful technology "
               imageUrl="/img/home/home-5.png"
@@ -79,14 +109,19 @@ const IndexPage: FC = () => {
             title="Make An Impact"
             body="Create an Inno chapter at your school today to bring the innovation that is paving the world of tomorrow to your school and community. "
             imageUrl="/img/home/home-6.png"
+            bgColor="bg-primary-red"
+            titleColor="text-white"
+            textColor="text-gray-100"
           />
         </div>
       </div>
 
       <div className="px-8 sm:px-4 py-4">
-        <div className="flex flex-col">
-          <h2 className="text-center text-4xl">SPONSORS</h2>
-          <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
+        <div className="flex flex-col space-y-2">
+          <h2 className="text-center text-2xl md:text-4xl font-bold">
+            SPONSORS
+          </h2>
+          <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto">
             <Sponsor name="AoPS" imageUrl="/img/home/sponsor-1.png" />
             <Sponsor name="Magoosh" imageUrl="/img/home/sponsor-2.png" />
             <Sponsor name="Wolfram" imageUrl="/img/home/sponsor-3.png" />
@@ -102,13 +137,27 @@ type GridSquareProp = {
   title: string;
   body: string;
   imageUrl: string;
+  bgColor: string;
+  textColor: string;
 };
 
-const GridSquare: FC<GridSquareProp> = ({ title, body, imageUrl }) => {
+const GridSquare: FC<GridSquareProp> = ({
+  title,
+  body,
+  imageUrl,
+  bgColor,
+  textColor,
+}) => {
   return (
-    <div className="flex flex-col justify-center space-y-2">
-      <h3 className="text-center uppercase text-3xl">{title}</h3>
-      <p className="text-center">{body}</p>
+    <div
+      className={`flex flex-col justify-center py-2 space-y-2 ${bgColor} rounded`}
+    >
+      <h3
+        className={`text-center uppercase text-2xl md:text-4xl font-semibold ${textColor}`}
+      >
+        {title}
+      </h3>
+      <p className={`text-center text-md md:text-lg ${textColor}`}>{body}</p>
       <img src={imageUrl} />
     </div>
   );
