@@ -28,7 +28,7 @@ const EventsPage: FC = () => {
 
       <div className="px-8 sm:px-4">
         <div className="flex flex-col sm:flex-row max-w-4xl mx-auto bg-primary-red py-4 sm:py-12 px-2">
-          <p className="text-center text-gray-100 text-md font-normal md:text-2xl">
+          <p className="text-center text-gray-100 text-md font-normal md:text-2xl rounded">
             INNO members will present{" "}
             <span className="uppercase text-white bg-primary-blue-darker">
               self-designed biotech

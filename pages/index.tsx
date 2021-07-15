@@ -45,7 +45,7 @@ const IndexPage: FC = () => {
 
       <div className="px-8 sm:px-4">
         <div className="flex flex-col sm:flex-row max-w-4xl mx-auto bg-primary-blue py-4 sm:py-12 px-2">
-          <p className="text-center text-gray-100 text-md font-normal md:text-2xl">
+          <p className="text-center text-gray-100 text-md font-normal md:text-2xl rounded">
             We are committed to providing our members with an{" "}
             <span className="uppercase text-white bg-primary-blue-darker">
               ENRICHING
