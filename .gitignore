@@ -1,3 +1,7 @@
 backend/services/certificate.json
 backend/venv/
 *.pyc
+
+node_modules/
+.next
+.vercel
