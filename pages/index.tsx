@@ -8,16 +8,16 @@ const IndexPage: FC = () => {
       <div className="px-8 sm:px-4">
         <div className="flex flex-col sm:flex-row max-w-4xl mx-auto">
           <div className="flex flex-col flex-1 space-y-4">
-            <h1 className="text-6xl md:text-9xl text-primary-red font-bold">
+            <h1 className="text-6xl md:text-9xl text-primary-red font-extrabold">
               INNO
             </h1>
-            <h2 className="text-md md:text-xl text-primary-red">
+            <h2 className="text-md md:text-xl text-primary-red font-medium">
               A student run non profit organization that provides{" "}
-              <span className="text-primary-blue-darker font-semibold">
+              <span className="text-primary-blue-darker font-bold">
                 COMPETITIVE OPPORTUNITIES
               </span>{" "}
               to introduce students to biotech concepts and the{" "}
-              <span className="text-primary-blue-darker font-semibold">
+              <span className="text-primary-blue-darker font-bold">
                 INNOVATION
               </span>{" "}
               behind them.
@@ -47,20 +47,20 @@ const IndexPage: FC = () => {
         <div className="flex flex-col sm:flex-row max-w-4xl mx-auto bg-primary-blue py-4 sm:py-12 px-2">
           <p className="text-center text-gray-100 text-md font-normal md:text-2xl rounded">
             We are committed to providing our members with an{" "}
-            <span className="uppercase text-white bg-primary-blue-darker">
+            <span className="uppercase text-white bg-primary-blue-darker px-1">
               ENRICHING
             </span>
             ,{" "}
-            <span className="uppercase text-white bg-primary-blue-darker">
+            <span className="uppercase text-white bg-primary-blue-darker px-1">
               HOLISTIC
             </span>
             ,{" "}
-            <span className="uppercase text-white bg-primary-blue-darker">
+            <span className="uppercase text-white bg-primary-blue-darker px-1">
               HANDS-ON EXPERIENCE
             </span>{" "}
             with biological and computational concepts, fostering creativity in
             all our members and allowing them to use their skills to make a{" "}
-            <span className="uppercase text-white bg-primary-blue-darker">
+            <span className="uppercase text-white bg-primary-blue-darker px-1">
               real-world impact
             </span>
             .
@@ -150,14 +150,16 @@ const GridSquare: FC<GridSquareProp> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col justify-center py-2 space-y-2 ${bgColor} rounded`}
+      className={`flex flex-col justify-center p-2 space-y-2 ${bgColor} rounded`}
     >
       <h3
         className={`text-center uppercase text-2xl md:text-4xl font-semibold ${textColor}`}
       >
         {title}
       </h3>
-      <p className={`text-center text-md md:text-lg ${textColor}`}>{body}</p>
+      <p className={`text-center text-md md:text-lg font-normal ${textColor}`}>
+        {body}
+      </p>
       <img src={imageUrl} />
     </div>
   );

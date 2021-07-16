@@ -23,7 +23,7 @@ const Hero: FC<HeroProp> = ({
       >
         {title}
       </h2>
-      <div className="flex flex-row">
+      <div className="flex flex-row px-2">
         <div className="flex-1 flex flex-col justify-center">
           <p className={`text-left text-xl ${textColor} px-2`}>{body}</p>
         </div>

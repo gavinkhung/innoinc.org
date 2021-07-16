@@ -36,7 +36,7 @@ const NavItem: FC<NavItemProps> = ({ route }: NavItemProps) => {
     <li>
       <Link href={route === "home" ? "/" : `/${route}`}>
         <a
-          className={`cursor-pointer px-1 md:px-2 text-base md:text-lg font-normal text-gray-100 capitalize border-b-4 border-transparent hover:text-gray-300 transition ${
+          className={`cursor-pointer px-1 md:px-2 text-lg md:text-xl font-normal text-gray-100 capitalize border-b-4 border-transparent hover:text-gray-300 transition ${
             ((router.pathname === "/" && route === "home") ||
               router.pathname === "/" + route) &&
             "border-gray-400"

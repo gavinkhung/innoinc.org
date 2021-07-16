@@ -8,8 +8,11 @@ const EventsPage: FC = () => {
       <div className="px-8 sm:px-4">
         <div className="flex flex-col sm:flex-row max-w-4xl mx-auto">
           <div className="flex-1 space-y-4">
-            <h1 className="text-6xl md:text-8xl">IDC</h1>
-            <h2 className="text-md md:text-lg">
+            <h1 className="text-6xl md:text-9xl text-primary-red font-extrabold">
+              IDC
+            </h1>
+
+            <h2 className="text-md md:text-xl text-primary-red font-medium">
               The Innovation Development Conference is meant to be the
               culmination of the application-based, real-world education INNO
               provides.
